@@ -4,11 +4,13 @@ import lombok.Data;
 
 
 @Data
-public class RestfulModel {
+public class UserVo {
 	
 	private Long Id;
 	
 	private String Name;
 	
-	private String Author ; 
+	private String Age;
+	
+	private String Hobbies;
 }
