@@ -14,7 +14,12 @@ import lombok.Data;
 public class RestfulEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+    
 	private Long Id;
+	
 	private String Name;
-	private String Author ; 
+	
+	private String Age;
+	
+	private String Hobbies; 
 }
