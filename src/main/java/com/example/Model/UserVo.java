@@ -6,11 +6,11 @@ import lombok.Data;
 @Data
 public class UserVo {
 	
-	private Long Id;
+	private Long id;
 	
-	private String Name;
+	private String name;
 	
-	private String Age;
+	private String age;
 	
-	private String Hobbies;
+	private String hobbies;
 }

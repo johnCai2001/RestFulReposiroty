@@ -28,9 +28,9 @@ public class RestfulController {
         return "Hello";
     }
     
-    
+    //把所有 RESTful URL路徑統一為(小寫 + 名詞複數)
     @Operation(summary = "取得使用者", description = "使用者的資料")
-    @GetMapping("/User")
+    @GetMapping("/users")
     public UserVo getUser(){
     	UserVo user=new UserVo();
     	user.setName("John");
@@ -42,9 +42,6 @@ public class RestfulController {
     @GetMapping("/users/{id}")
     public ResponseEntity<UserVo> getUserById(@PathVariable Long id) {
         UserVo user = Service.getuserid(id);
-        if (user == null) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
-        }
         return ResponseEntity.ok(user);
     }
 

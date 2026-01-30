@@ -10,16 +10,17 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name="RestfulTable")
+//Table命名與DB完全一樣
+@Table(name="restfultable")
 public class RestfulEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-    
-	private Long Id;
+    private Long id;
 	
-	private String Name;
+	private String name;
 	
-	private String Age;
+	private String age;
 	
-	private String Hobbies; 
+	private String hobbies;
+	
 }
